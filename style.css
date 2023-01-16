@@ -39,11 +39,19 @@ section {
     left: 50%;
     transform: translate(-50%,-50%);
     height: 80vh;
-    width: 70%;
+    width: 90%;
     background: rgb(245, 245, 245);
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     overflow-x: hidden;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.205);
+}
+
+.th-nome {
+    width: 40%;
+}
+
+.th-telefone {
+    width: 30%;
 }
 
 .card table th {
@@ -53,18 +61,7 @@ section {
 .card table th,td {
     padding: 1rem 3rem;
     border: 1px solid #ccc;
-}
-
-.card table td {
-    font-size: .8em;
-}
-
-.th-nome {
-    width: 30%;
-}
-
-.th-email {
-    width: 40%;
+    text-align: center;
 }
 
 .header-card {
@@ -73,7 +70,6 @@ section {
     gap: 10px;
     justify-content: left;
     margin-bottom: 1rem;
-    /* height: 100%; */
 }
 
 #btn-cadastrar {
@@ -103,7 +99,7 @@ section {
     left: 50%;
     transform: translate(-50%,-50%);
     height: 70vh;
-    width: 30%;
+    width: 50%;
     background: rgb(230, 230, 230);
     padding: 2rem 4rem;
     overflow-x: hidden;
@@ -181,7 +177,7 @@ section {
 
     .card table th,td {
         font-size: .7em;
-        padding: 1rem .5rem;
+        width: 60%;
     }
 
     .modal-cadastro {
@@ -189,18 +185,30 @@ section {
     }
 }
 
-@media screen and (max-width:460px) {
+@media screen and (max-width:560px) {
 
     header {
         font-size: .9em;
     }
 
     .card {
-        padding: 1rem 2rem 3rem 1rem;
+        width: 100%;
+    }
+
+    .card table th {
+        padding: .5rem .5rem;
+    }
+
+    .card table td {
+        padding: 1.5rem .5rem;
+    }
+
+    .card table th {
+        font-size: .7em;
     }
 
     .modal-cadastro {
-        padding: 2rem;
+        padding: .5rem;
         width: 100%;
         height: 120vh;
     }
